@@ -1,0 +1,14 @@
+{
+    "name": "node_multistage_starwars_api",
+    "version": "0.0.1",
+    "description": "A node / express app that fetches data from the Star Wars API",
+    "type": "module",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "express": "^4.19.2",
+        "node-fetch": "^3.3.2"
+    },
+    "license": "ISC"
+}
