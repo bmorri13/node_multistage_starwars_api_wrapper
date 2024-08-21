@@ -1,9 +1,9 @@
-FROM node:20 AS build-env
+FROM cgr.dev/chainguard/node:latest-dev AS build-env
 ADD . /app
 WORKDIR /app
 RUN npm install --omit=dev
 
-FROM gcr.io/distroless/nodejs20-debian11
+FROM cgr.dev/chainguard/node:latest
 COPY --from=build-env /app /app
 WORKDIR /app
 EXPOSE 3000
