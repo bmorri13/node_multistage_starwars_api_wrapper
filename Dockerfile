@@ -7,4 +7,4 @@ FROM cgr.dev/chainguard/node:latest
 COPY --from=build-env /app /app
 WORKDIR /app
 EXPOSE 5002
-CMD ["index.js"]
+CMD ["node", "index.js"]
