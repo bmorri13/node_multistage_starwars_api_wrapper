@@ -6,7 +6,7 @@ const port = 5002;
 
 // Function to get the URL from SWAPI
 async function getSwapiUrl(endpoint, searchTerm) {
-  let swapiUrl = `https://swapi.dev/api/${endpoint}/`;
+  let swapiUrl = `https://swapi.py4e.com/api/${endpoint}/`;
   if (searchTerm) {
     swapiUrl += `?search=${searchTerm}`;
   }
